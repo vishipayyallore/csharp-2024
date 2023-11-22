@@ -2,22 +2,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
+            "name": ".HelloCS - Launch",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/HelloCS/bin/Debug/net8.0>/HelloCS.dll",
+            "program": "${workspaceFolder}/HelloCS/bin/Debug/net8.0/HelloCS.dll",
             "args": [],
             "cwd": "${workspaceFolder}/HelloCS",
             "stopAtEntry": false,
             "console": "internalConsole"
         },
         {
-            "name": ".NET Core Launch (console)",
+            "name": "HelloEnvironment - Launch",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/HelloEnvironment/bin/Debug/net8.0/HelloEnvironment.dll",
             "args": [],
             "cwd": "${workspaceFolder}/HelloEnvironment",
