@@ -6,8 +6,14 @@ class Program
     {
         ForegroundColor = ConsoleColor.DarkCyan;
 
-        WriteLine(Env.CurrentDirectory);
-        WriteLine(Env.OSVersion.VersionString);
+        WriteLine("We received {0} arguments:", args.Length);
+        foreach (var arg in args)
+        {
+            WriteLine(arg);
+        }
+
+        WriteLine("CurrentDirectory: {0}", Env.CurrentDirectory);
+        WriteLine("OSVersion.VersionString: {0}", Env.OSVersion.VersionString);
         WriteLine("Namespace: {0}!", typeof(Program).Namespace);
 
         ResetColor();
