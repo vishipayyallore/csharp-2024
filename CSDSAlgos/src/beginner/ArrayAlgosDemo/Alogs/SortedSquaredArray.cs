@@ -40,7 +40,7 @@ public static class SortedSquaredArray
 
         DisplayInputArray(inputArray, title);
 
-        var sortedSquaredArray = sortedSquaredArrayFunc(inputArray);
+        int[]? sortedSquaredArray = sortedSquaredArrayFunc(inputArray);
 
         WriteLine($"Sorted Squared Array: {ArrayToStringHelper.ConvertIntArrayToString(sortedSquaredArray)}");
 
