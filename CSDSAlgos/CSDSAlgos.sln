@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34310.174
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentation", "{B9D1F211-B82C-4BE1-A710-F4269E221982}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{A9A35B98-7E97-4521-8B9B-8E5709D4D868}"
+	ProjectSection(SolutionItems) = preProject
+		documentation\images\B.txt = documentation\images\B.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9A35B98-7E97-4521-8B9B-8E5709D4D868} = {B9D1F211-B82C-4BE1-A710-F4269E221982}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2157BC56-B31C-48D1-A677-6175CE67DD56}
