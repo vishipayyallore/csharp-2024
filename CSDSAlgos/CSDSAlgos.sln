@@ -27,6 +27,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{10C7A9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter", "src\common\HeaderFooter\HeaderFooter.csproj", "{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleColorStyleLib", "src\common\ConsoleColorStyleLib\ConsoleColorStyleLib.csproj", "{1604361C-E62C-4F99-914E-EE211927A87A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{A9A35B98-7E97-4521-8B9B-8E5709D4D868} = {B9D1F211-B82C-4BE1-A710-F4269E221982}
 		{10C7A98D-6A58-4A90-BDA0-DA62154C977E} = {1856D97E-F1EA-433F-9E2B-FD042FDA3538}
 		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0} = {10C7A98D-6A58-4A90-BDA0-DA62154C977E}
+		{1604361C-E62C-4F99-914E-EE211927A87A} = {10C7A98D-6A58-4A90-BDA0-DA62154C977E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2157BC56-B31C-48D1-A677-6175CE67DD56}
