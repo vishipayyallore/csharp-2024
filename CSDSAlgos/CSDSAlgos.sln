@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentation", "{B9D1F211-B82C-4BE1-A710-F4269E221982}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{A9A35B98-7E97-4521-8B9B-8E5709D4D868}"
+	ProjectSection(SolutionItems) = preProject
+		documentation\images\B.txt = documentation\images\B.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA51278A-9AEC-4F72-87A0-6C725F30FDB7}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F285BCF7-2162-4691-A4E2-6D547E2415BA}"
+	ProjectSection(SolutionItems) = preProject
+		tests\A.txt = tests\A.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1856D97E-F1EA-433F-9E2B-FD042FDA3538}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{10C7A98D-6A58-4A90-BDA0-DA62154C977E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter", "src\common\HeaderFooter\HeaderFooter.csproj", "{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleColorStyleLib", "src\common\ConsoleColorStyleLib\ConsoleColorStyleLib.csproj", "{1604361C-E62C-4F99-914E-EE211927A87A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1604361C-E62C-4F99-914E-EE211927A87A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9A35B98-7E97-4521-8B9B-8E5709D4D868} = {B9D1F211-B82C-4BE1-A710-F4269E221982}
+		{10C7A98D-6A58-4A90-BDA0-DA62154C977E} = {1856D97E-F1EA-433F-9E2B-FD042FDA3538}
+		{7B98B96C-D9B9-4E72-B841-E44CF09D8ED0} = {10C7A98D-6A58-4A90-BDA0-DA62154C977E}
+		{1604361C-E62C-4F99-914E-EE211927A87A} = {10C7A98D-6A58-4A90-BDA0-DA62154C977E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2157BC56-B31C-48D1-A677-6175CE67DD56}
+	EndGlobalSection
+EndGlobal
