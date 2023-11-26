@@ -12,8 +12,8 @@ public static class TwoNumbersSum
 
     public static void ShowDemo()
     {
-        var inputNumbers = new int[] { 3, 5, -4, 8, 11, 1, -1, 6 };
-        var sumToMatch = 10;
+        int[] inputNumbers = [3, 5, -4, 8, 11, 1, -1, 6];
+        int sumToMatch = 10;
 
         ExecuteTwoNumberSum(TwoNumberSumV1, inputNumbers, sumToMatch, titles[0], ConsoleColorStyle.DarkCyan);
 
@@ -46,19 +46,19 @@ public static class TwoNumbersSum
             {
                 if (inputNumbers[i] + inputNumbers[j] == sumToMatch)
                 {
-                    return new[] { inputNumbers[i], inputNumbers[j] };
+                    return [inputNumbers[i], inputNumbers[j]];
                 }
             }
         }
 
-        return Array.Empty<int>();
+        return [];
     }
 
     private static int[] TwoNumberSumV2(int[] inputNumbers, int sumToMatch)
     {
         DisplayInputAndSum(inputNumbers, sumToMatch);
 
-        HashSet<int> visited = new();
+        HashSet<int> visited = [];
 
         for (int i = 0; i < inputNumbers.Length; i++)
         {
@@ -66,13 +66,13 @@ public static class TwoNumbersSum
 
             if (visited.Contains(value))
             {
-                return new[] { inputNumbers[i], value };
+                return [inputNumbers[i], value];
             }
 
             visited.Add(inputNumbers[i]);
         }
 
-        return Array.Empty<int>();
+        return [];
     }
 
     private static void DisplayInputAndSum(int[] inputNumbers, int sumToMatch)

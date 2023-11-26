@@ -9,7 +9,7 @@ public static class TwoNumbersSumV2
 {
     private static readonly Header _header = new();
     private static readonly Footer _footer = new();
-    private static readonly string[] titles = { "Two Numbers Sum - V1", "Two Numbers Sum - V2" };
+    private static readonly string[] titles = ["Two Numbers Sum - V1", "Two Numbers Sum - V2"];
 
     public static void ShowDemo()
     {
@@ -65,18 +65,18 @@ public static class TwoNumbersSumV2
             {
                 if (inputNumbers[i] + inputNumbers[j] == sumToMatch)
                 {
-                    return new[] { inputNumbers[i], inputNumbers[j] };
+                    return [inputNumbers[i], inputNumbers[j]];
                 }
             }
         }
 
         // Common Logic B: Return Array.Empty<int>() when no match is found
-        return Array.Empty<int>();
+        return [];
     }
 
     private static int[] FindTwoNumbersSumHashSet(int[] inputNumbers, int sumToMatch)
     {
-        HashSet<int> visited = new();
+        HashSet<int> visited = [];
 
         for (int i = 0; i < inputNumbers.Length; i++)
         {
@@ -84,14 +84,14 @@ public static class TwoNumbersSumV2
 
             if (visited.Contains(value))
             {
-                return new[] { inputNumbers[i], value };
+                return [inputNumbers[i], value];
             }
 
             visited.Add(inputNumbers[i]);
         }
 
         // Common Logic B: Return Array.Empty<int>() when no match is found
-        return Array.Empty<int>();
+        return [];
     }
 
     private static void DisplayInputAndSum(int[] inputNumbers, int sumToMatch)

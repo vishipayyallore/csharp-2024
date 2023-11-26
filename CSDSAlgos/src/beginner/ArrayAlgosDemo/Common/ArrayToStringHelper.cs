@@ -7,7 +7,7 @@ public static class ArrayToStringHelper
         // If the inputArray is null, return an empty string array.
         if (inputArray is null)
         {
-            return Array.Empty<string>();
+            return [];
         }
 
         return Array.ConvertAll(inputArray, ele => ele.ToString());
