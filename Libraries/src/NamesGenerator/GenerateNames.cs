@@ -9,7 +9,7 @@ public class GenerateNames : IGenerateNames
 
     private static readonly string[] _vowels = { "a", "e", "i", "o", "u", "ae", "y" };
 
-    static readonly Random _random = new();
+    private static readonly Random _random = new();
 
     public string[] GetNames(int nameLength = 10, int numberOfNames = 10)
     {
