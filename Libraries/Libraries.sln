@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeaderFooter", "src\HeaderF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleColorStyleLib", "src\ConsoleColorStyleLib\ConsoleColorStyleLib.csproj", "{532C23A2-42CB-4CED-8299-49F6E44E4D1E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamesGenerator", "src\NamesGenerator\NamesGenerator.csproj", "{8B08FDBF-714F-445E-8C76-24B60817100E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintHelperLib", "src\PrintHelperLib\PrintHelperLib.csproj", "{3C6C8AA6-0027-4954-A52B-E46C47E3A864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{532C23A2-42CB-4CED-8299-49F6E44E4D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{532C23A2-42CB-4CED-8299-49F6E44E4D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{532C23A2-42CB-4CED-8299-49F6E44E4D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B08FDBF-714F-445E-8C76-24B60817100E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B08FDBF-714F-445E-8C76-24B60817100E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B08FDBF-714F-445E-8C76-24B60817100E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B08FDBF-714F-445E-8C76-24B60817100E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +48,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DABE9198-5F9B-451F-9AC5-2A20239EB962} = {338936B7-670C-406D-A8E8-AA2866C4417E}
 		{532C23A2-42CB-4CED-8299-49F6E44E4D1E} = {338936B7-670C-406D-A8E8-AA2866C4417E}
+		{8B08FDBF-714F-445E-8C76-24B60817100E} = {338936B7-670C-406D-A8E8-AA2866C4417E}
+		{3C6C8AA6-0027-4954-A52B-E46C47E3A864} = {338936B7-670C-406D-A8E8-AA2866C4417E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E834007-A239-47AE-BABE-8BAE25A9F0DB}
