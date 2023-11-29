@@ -8,12 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="ConsoleColorStyleLib">
-      <HintPath>..\..\..\..\Libraries\src\ConsoleColorStyleLib\bin\Debug\net8.0\ConsoleColorStyleLib.dll</HintPath>
-    </Reference>
-    <Reference Include="HeaderFooter">
-      <HintPath>..\..\..\..\Libraries\src\HeaderFooter\bin\Debug\net8.0\HeaderFooter.dll</HintPath>
-    </Reference>
+    <PackageReference Include="ConsoleColorStyleLib" Version="1.1.1" />
+    <PackageReference Include="HeaderFooter" Version="1.1.1" />
   </ItemGroup>
 
   <ItemGroup>
