@@ -4,6 +4,17 @@ I am learning C# from different Video Courses, Books, and Websites
 
 <C:\Users\PK.Viswanatha-Swamy\OneDrive - Applied Information Sciences\Desktop\ShriLordKrishna\LordKrishna\SSP>
 
+## Publish the Package to Local Folder
+
+```bash
+dotnet clean
+dotnet build
+dotnet pack -o C:\LordKrishna\Packages\
+
+dotnet nuget add source C:\LordKrishna\Packages -n Local-AllPackages
+dotnet nuget list source
+```
+
 ## Chapter 01
 
 ```bash
