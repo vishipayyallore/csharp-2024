@@ -2,13 +2,15 @@
 
 I am learning C# from different Video Courses, Books, and Websites
 
-<C:\Users\PK.Viswanatha-Swamy\OneDrive - Applied Information Sciences\Desktop\ShriLordKrishna\LordKrishna\SSP>
+<C:\Users\Swamy\OneDrive\Desktop\ShriLordKrishna\LordKrishna\SSP>
 
 ## Publish the Package to Local Folder
 
+< C:\GitHub\learn-csharp-in-2024\Libraries\src>
+
 ```bash
 dotnet clean
-dotnet build
+dotnet build -c Release # It should be Release, so that we will be able to publish the package
 dotnet pack -o C:\LordKrishna\Packages\
 
 dotnet nuget add source C:\LordKrishna\Packages -n Local-AllPackages
