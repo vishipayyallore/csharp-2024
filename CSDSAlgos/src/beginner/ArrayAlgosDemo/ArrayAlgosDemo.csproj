@@ -8,8 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\common\ConsoleColorStyleLib\ConsoleColorStyleLib.csproj" />
-    <ProjectReference Include="..\..\common\HeaderFooter\HeaderFooter.csproj" />
+    <Reference Include="ConsoleColorStyleLib">
+      <HintPath>..\..\..\..\Libraries\src\ConsoleColorStyleLib\bin\Debug\net8.0\ConsoleColorStyleLib.dll</HintPath>
+    </Reference>
+    <Reference Include="HeaderFooter">
+      <HintPath>..\..\..\..\Libraries\src\HeaderFooter\bin\Debug\net8.0\HeaderFooter.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
