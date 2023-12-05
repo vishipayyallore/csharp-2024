@@ -1,4 +1,6 @@
-﻿using HeaderFooter;
+﻿using Ch01.Interfaces;
+using Ch01.Runnables;
+using HeaderFooter;
 using HeaderFooter.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,6 +13,11 @@ public static class ServiceCollectionExtensions
     {
         _ = services.AddTransient<IFooter, Footer>();
         _ = services.AddTransient<IHeader, Header>();
+
+        // IMPORTANT! Register the application entry point
+        _ = services.AddKeyedTransient<IRunnable, HelloCSApp>("HelloCSApp");
+
+        _ = services.AddKeyedTransient<IRunnable, HelloEnvironmentApp>("HelloEnvironmentApp");
 
         return services;
     }
