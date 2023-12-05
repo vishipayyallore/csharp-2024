@@ -10,7 +10,7 @@ using IHost? host = Host.CreateDefaultBuilder(args)
     })
     .Build();
 
-host.Services.GetRequiredService<IRunnable>()?.Run();
+host.Services.GetKeyedService<IRunnable>("HelloCSApp")?.Run();
 
 WriteLine("\n\nPress any key ... ");
 ReadKey();

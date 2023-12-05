@@ -10,17 +10,17 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
 
     public void Run()
     {
-        ForegroundColor = ConsoleColor.DarkCyan;
-
         _header.DisplayHeader('=', "Hello, C# 12 - .Net 8");
+
+        ForegroundColor = ConsoleColor.DarkCyan;
 
         WriteLine("Hello, C# 12, and DotNet 8 !");
 
         string name = typeof(Program).Namespace ?? "None!";
         WriteLine($"Namespace: {name}");
 
-        ResetColor();
-
         _footer.DisplayFooter('-');
+
+        throw new Exception();
     }
 }
