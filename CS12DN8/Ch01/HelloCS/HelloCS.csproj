@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HeaderFooter" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="System.Console" Static="true" />
   </ItemGroup>
 
