@@ -1,4 +1,5 @@
 ﻿using Ch01.Interfaces;
+using HeaderFooter;
 using HeaderFooter.Interfaces;
 
 namespace Ch01.Runnables;
@@ -7,6 +8,10 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
 {
     private readonly IHeader _header = header ?? throw new ArgumentNullException(nameof(header));
     private readonly IFooter _footer = footer ?? throw new ArgumentNullException(nameof(footer));
+
+    public HelloCSApp() : this(new Header(), new Footer())
+    {
+    }
 
     public void Run()
     {
@@ -22,16 +27,4 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
         _footer.DisplayFooter('-');
     }
 
-    public void Run(bool throwException)
-    {
-        Run();
-
-        if (throwException) ThrowAndShowExceptionMessage();
-    }
-
-
-    private static void ThrowAndShowExceptionMessage()
-    {
-        throw new Exception();
-    }
 }

@@ -9,8 +9,4 @@ internal class HelloEnvironmentApp : IRunnable
         WriteLine("HelloEnvironmentApp::Run() Called.");
     }
 
-    public void Run(bool throwException)
-    {
-        WriteLine("HelloEnvironmentApp::Run(bool throwException) Called.");
-    }
 }
