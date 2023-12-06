@@ -10,7 +10,24 @@ using IHost? host = Host.CreateDefaultBuilder(args)
     })
     .Build();
 
-host.Services.GetKeyedService<IRunnable>("HelloCSApp")?.Run();
+IRunnable? runnable = host.Services.GetKeyedService<IRunnable>("HelloCSApp");
+
+if (runnable != null)
+{
+    try
+    {
+        runnable.Run();
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"An error occurred: {ex.Message}");
+        // Log the exception
+    }
+}
+else
+{
+    Console.WriteLine("Unable to resolve the IRunnable service with key 'HelloCSApp'.");
+}
 
 WriteLine("\n\nPress any key ... ");
 ReadKey();
