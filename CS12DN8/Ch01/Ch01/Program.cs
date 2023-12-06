@@ -14,20 +14,25 @@ IRunnable? runnable = host.Services.GetKeyedService<IRunnable>("HelloCSApp");
 
 if (runnable != null)
 {
-    try
-    {
-        runnable.Run();
-    }
-    catch (Exception ex)
-    {
-        Console.WriteLine($"An error occurred: {ex.Message}");
-        // Log the exception
-    }
+    RunApplication(runnable);
 }
 else
 {
-    Console.WriteLine("Unable to resolve the IRunnable service with key 'HelloCSApp'.");
+    WriteLine("Unable to resolve the IRunnable service with key 'HelloCSApp'.");
 }
 
 WriteLine("\n\nPress any key ... ");
 ReadKey();
+
+static void RunApplication(IRunnable runnable)
+{
+    try
+    {
+        runnable.Run(true);
+    }
+    catch (Exception ex)
+    {
+        WriteLine($"An error occurred: {ex.Message}");
+        // Log the exception
+    }
+}

@@ -31,5 +31,7 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
     public void Run(bool throwException)
     {
         _throwException = throwException;
+
+        Run();
     }
 }
