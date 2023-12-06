@@ -6,6 +6,11 @@ internal class HelloEnvironmentApp : IRunnable
 {
     public void Run()
     {
-        throw new NotImplementedException();
+        WriteLine("HelloEnvironmentApp::Run() Called.");
+    }
+
+    public void Run(bool throwException)
+    {
+        WriteLine("HelloEnvironmentApp::Run(bool throwException) Called.");
     }
 }

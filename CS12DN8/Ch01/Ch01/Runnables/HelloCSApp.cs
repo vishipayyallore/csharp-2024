@@ -7,6 +7,7 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
 {
     private readonly IHeader _header = header ?? throw new ArgumentNullException(nameof(header));
     private readonly IFooter _footer = footer ?? throw new ArgumentNullException(nameof(footer));
+    private bool _throwException;
 
     public void Run()
     {
@@ -21,6 +22,14 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
 
         _footer.DisplayFooter('-');
 
-        throw new Exception();
+        if (_throwException)
+        {
+            throw new Exception();
+        }
+    }
+
+    public void Run(bool throwException)
+    {
+        _throwException = throwException;
     }
 }
