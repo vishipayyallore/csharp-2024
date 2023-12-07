@@ -21,27 +21,27 @@ foreach (IRunnable? runnable in runnableInstances!)
 WriteLine("\n\nPress any key ... ");
 ReadKey();
 
-static IEnumerable<IRunnable?>? GetRunnableInstances(string namespacePrefix)
-{
-    Type? runnableInterfaceType = typeof(IRunnable);
-    Assembly? assembly = Assembly.GetExecutingAssembly();
+//static IEnumerable<IRunnable?>? GetRunnableInstances(string namespacePrefix)
+//{
+//    Type? runnableInterfaceType = typeof(IRunnable);
+//    Assembly? assembly = Assembly.GetExecutingAssembly();
 
-    List<IRunnable?>? runnableInstances = assembly.GetTypes()
-        .Where(type => type.IsClass && type.Namespace == namespacePrefix && runnableInterfaceType.IsAssignableFrom(type))
-        .Select(type => (IRunnable?)Activator.CreateInstance(type))
-        .ToList();
+//    List<IRunnable?>? runnableInstances = assembly.GetTypes()
+//        .Where(type => type.IsClass && type.Namespace == namespacePrefix && runnableInterfaceType.IsAssignableFrom(type))
+//        .Select(type => (IRunnable?)Activator.CreateInstance(type))
+//        .ToList();
 
-    return runnableInstances;
-}
+//    return runnableInstances;
+//}
 
-static void RunRunnable(IRunnable runnable)
-{
-    try
-    {
-        runnable.Run();
-    }
-    catch (Exception ex)
-    {
-        WriteLine($"An error occurred while running {runnable.GetType().Name}: {ex.Message}");
-    }
-}
+//static void RunRunnable(IRunnable runnable)
+//{
+//    try
+//    {
+//        runnable.Run();
+//    }
+//    catch (Exception ex)
+//    {
+//        WriteLine($"An error occurred while running {runnable.GetType().Name}: {ex.Message}");
+//    }
+//}
