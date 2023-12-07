@@ -16,7 +16,6 @@ public static class ServiceCollectionExtensions
 
         // IMPORTANT! Register the application entry point
         _ = services.AddKeyedTransient<IRunnable, HelloCSApp>("HelloCSApp");
-
         _ = services.AddKeyedTransient<IRunnable, HelloEnvironmentApp>("HelloEnvironmentApp");
 
         return services;

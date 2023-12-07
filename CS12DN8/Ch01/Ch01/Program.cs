@@ -1,7 +1,5 @@
 ﻿using Ch01.Extensions;
 using Ch01.Interfaces;
-using HeaderFooter.Interfaces;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
 
