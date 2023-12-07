@@ -1,6 +1,6 @@
 ﻿namespace Ch01.Interfaces;
 
-internal interface IRunnable
+public interface IRunnable
 {
     void Run();
 }
