@@ -45,6 +45,5 @@ static void RunRunnable(IRunnable runnable)
     catch (Exception ex)
     {
         Console.WriteLine($"An error occurred while running {runnable.GetType().Name}: {ex.Message}");
-        // Log the exception
     }
 }
