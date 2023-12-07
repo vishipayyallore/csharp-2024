@@ -11,24 +11,24 @@ using IHost? host = Host.CreateDefaultBuilder(args)
     .Build();
 
 // Discover and instantiate IRunnable instances in the Runnables namespace
-var runnableInstances = GetRunnableInstances("Ch01.Runnables");
+IEnumerable<IRunnable?>? runnableInstances = GetRunnableInstances("Ch01.Runnables");
 
-foreach (var runnable in runnableInstances)
+foreach (IRunnable? runnable in runnableInstances!)
 {
-    RunRunnable(runnable);
+    RunRunnable(runnable!);
 }
 
 WriteLine("\n\nPress any key ... ");
 ReadKey();
 
-static IEnumerable<IRunnable> GetRunnableInstances(string namespacePrefix)
+static IEnumerable<IRunnable?>? GetRunnableInstances(string namespacePrefix)
 {
-    var runnableInterfaceType = typeof(IRunnable);
-    var assembly = Assembly.GetExecutingAssembly();
+    Type? runnableInterfaceType = typeof(IRunnable);
+    Assembly? assembly = Assembly.GetExecutingAssembly();
 
-    var runnableInstances = assembly.GetTypes()
+    List<IRunnable?>? runnableInstances = assembly.GetTypes()
         .Where(type => type.IsClass && type.Namespace == namespacePrefix && runnableInterfaceType.IsAssignableFrom(type))
-        .Select(type => (IRunnable)Activator.CreateInstance(type))
+        .Select(type => (IRunnable?)Activator.CreateInstance(type))
         .ToList();
 
     return runnableInstances;
