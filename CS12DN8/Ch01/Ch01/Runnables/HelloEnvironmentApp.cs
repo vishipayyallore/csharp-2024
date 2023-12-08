@@ -10,15 +10,11 @@ internal class HelloEnvironmentApp : IRunnable
 
     public void Run()
     {
-        //_header.DisplayHeader('=', Title);
-
         ForegroundColor = ConsoleColor.DarkCyan;
 
         WriteLine("CurrentDirectory: {0}", Env.CurrentDirectory);
         WriteLine("OSVersion.VersionString: {0}", Env.OSVersion.VersionString);
         WriteLine("Namespace: {0}!", typeof(Program).Namespace);
-
-        //_footer.DisplayFooter('-');
     }
 
 }
