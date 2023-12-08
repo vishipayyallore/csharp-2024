@@ -1,12 +1,14 @@
 ﻿using Ch01.Interfaces;
+using HeaderFooter.Interfaces;
 using Microsoft.Extensions.Logging;
 using System.Reflection;
 
 namespace Ch01.Utilities;
 
-public class RunnableManager(ILogger<RunnableManager> logger) : IRunnableManager
+public class RunnableManager(ILogger<RunnableManager> logger, IFooter footer) : IRunnableManager
 {
     private readonly ILogger<RunnableManager> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+    private readonly IFooter _footer = footer ?? throw new ArgumentNullException(nameof(footer));
 
     public IEnumerable<IRunnable?> GetRunnableInstances(string namespacePrefix)
     {
@@ -41,6 +43,19 @@ public class RunnableManager(ILogger<RunnableManager> logger) : IRunnableManager
         catch (Exception ex)
         {
             _logger.LogError($"An error occurred while running {runnable.GetType().Name}: {ex.Message}");
+        }
+    }
+
+    public void RunAllRunnables(string namespacePrefix)
+    {
+        // Discover and instantiate IRunnable instances in the Runnables namespace
+        IEnumerable<IRunnable?>? runnableInstances = GetRunnableInstances(namespacePrefix);
+
+        foreach (IRunnable? runnable in runnableInstances!)
+        {
+            RunRunnable(runnable!);
+
+            _footer.DisplayFooter('*', 140, ConsoleColor.DarkMagenta);
         }
     }
 }

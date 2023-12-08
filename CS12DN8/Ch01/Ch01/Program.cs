@@ -13,13 +13,7 @@ using IHost? host = Host.CreateDefaultBuilder(args)
 // Get IRunnableManager from the service provider
 IRunnableManager? runnableManager = host.Services.GetRequiredService<IRunnableManager>();
 
-// Discover and instantiate IRunnable instances in the Runnables namespace
-IEnumerable<IRunnable?>? runnableInstances = runnableManager.GetRunnableInstances("Ch01.Runnables");
-
-foreach (IRunnable? runnable in runnableInstances!)
-{
-    runnableManager.RunRunnable(runnable!);
-}
+runnableManager.RunAllRunnables("Ch01.Runnables");
 
 WriteLine("\n\nPress any key ... ");
 ReadKey();
