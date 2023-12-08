@@ -14,9 +14,11 @@ internal class HelloEnvironmentApp(IHeader header, IFooter footer) : IRunnable
     {
     }
 
+    public string Title => "Hello, Environment";
+
     public void Run()
     {
-        _header.DisplayHeader('=', "Hello, Environment");
+        _header.DisplayHeader('=', Title);
 
         ForegroundColor = ConsoleColor.DarkCyan;
 

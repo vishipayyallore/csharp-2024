@@ -13,9 +13,11 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
     {
     }
 
+    public string Title => "Hello, C# 12 - .Net 8";
+
     public void Run()
     {
-        _header.DisplayHeader('=', "Hello, C# 12 - .Net 8");
+        _header.DisplayHeader('=', Title);
 
         ForegroundColor = ConsoleColor.DarkCyan;
 
