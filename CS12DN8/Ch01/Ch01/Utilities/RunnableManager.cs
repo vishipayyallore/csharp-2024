@@ -19,6 +19,7 @@ public class RunnableManager(ILogger<RunnableManager> logger, IHeader header, IF
         if (runnableInterfaceType == null || assembly == null)
         {
             _logger.LogError("Unable to retrieve types due to null reflection objects.");
+
             return Enumerable.Empty<IRunnable?>();
         }
 
