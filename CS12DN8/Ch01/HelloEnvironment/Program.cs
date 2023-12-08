@@ -7,7 +7,7 @@ class Program
         ForegroundColor = ConsoleColor.DarkCyan;
 
         WriteLine("We received {0} arguments:", args.Length);
-        foreach (var arg in args)
+        foreach (string arg in args)
         {
             WriteLine(arg);
         }
