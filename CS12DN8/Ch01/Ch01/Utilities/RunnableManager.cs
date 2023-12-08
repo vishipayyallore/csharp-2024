@@ -5,10 +5,11 @@ using System.Reflection;
 
 namespace Ch01.Utilities;
 
-public class RunnableManager(ILogger<RunnableManager> logger, IFooter footer) : IRunnableManager
+public class RunnableManager(ILogger<RunnableManager> logger, IHeader header, IFooter footer) : IRunnableManager
 {
     private readonly ILogger<RunnableManager> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     private readonly IFooter _footer = footer ?? throw new ArgumentNullException(nameof(footer));
+    private readonly IHeader _header = header ?? throw new ArgumentNullException(nameof(header));
 
     public IEnumerable<IRunnable?> GetRunnableInstances(string namespacePrefix)
     {
@@ -38,7 +39,11 @@ public class RunnableManager(ILogger<RunnableManager> logger, IFooter footer) : 
     {
         try
         {
+            _header.DisplayHeader('=', runnable.Title);
+
             runnable.Run();
+
+            _footer.DisplayFooter('-');
         }
         catch (Exception ex)
         {

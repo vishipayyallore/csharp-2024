@@ -17,7 +17,7 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
 
     public void Run()
     {
-        _header.DisplayHeader('=', Title);
+        //_header.DisplayHeader('=', Title);
 
         ForegroundColor = ConsoleColor.DarkCyan;
 
@@ -26,7 +26,7 @@ internal class HelloCSApp(IHeader header, IFooter footer) : IRunnable
         string name = typeof(Program).Namespace ?? "None!";
         WriteLine($"Namespace: {name}");
 
-        _footer.DisplayFooter('-');
+        //_footer.DisplayFooter('-');
     }
 
 }
