@@ -2,5 +2,7 @@
 
 public interface IRunnable
 {
+    string Title { get; }
+
     void Run();
 }
