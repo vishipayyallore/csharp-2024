@@ -1,4 +1,4 @@
-﻿namespace Ch01.Interfaces;
+﻿namespace CoreServices.Runner.Interfaces;
 
 public interface IRunnableManager
 {
