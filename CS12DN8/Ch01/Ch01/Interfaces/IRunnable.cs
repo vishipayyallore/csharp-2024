@@ -1,8 +1,8 @@
-﻿namespace Ch01.Interfaces;
+﻿//namespace Ch01.Interfaces;
 
-public interface IRunnable
-{
-    string Title { get; }
+//public interface IRunnable
+//{
+//    string Title { get; }
 
-    void Run();
-}
+//    void Run();
+//}
