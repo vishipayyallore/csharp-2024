@@ -1,10 +1,10 @@
-﻿namespace Ch01.Interfaces;
+﻿//namespace Ch01.Interfaces;
 
-public interface IRunnableManager
-{
-    IEnumerable<IRunnable?> GetRunnableInstances(string namespacePrefix);
+//public interface IRunnableManager
+//{
+//    IEnumerable<IRunnable?> GetRunnableInstances(string namespacePrefix);
 
-    void RunRunnable(IRunnable runnable);
+//    void RunRunnable(IRunnable runnable);
 
-    public void RunAllRunnables(string namespacePrefix);
-}
+//    public void RunAllRunnables(string namespacePrefix);
+//}

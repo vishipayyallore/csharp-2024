@@ -1,6 +1,6 @@
-﻿using Ch01.Interfaces;
-using Ch01.Runnables;
-using Ch01.Utilities;
+﻿using Ch01.Runnables;
+using CoreServices.Runner;
+using CoreServices.Runner.Interfaces;
 using HeaderFooter;
 using HeaderFooter.Interfaces;
 using Microsoft.Extensions.DependencyInjection;

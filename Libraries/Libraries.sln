@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NamesGenerator", "src\Names
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintHelperLib", "src\PrintHelperLib\PrintHelperLib.csproj", "{3C6C8AA6-0027-4954-A52B-E46C47E3A864}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreServices.Runner", "src\CoreServices.Runner\CoreServices.Runner.csproj", "{ECDEDA9A-4670-4E91-AAB8-03C098C1D1EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C6C8AA6-0027-4954-A52B-E46C47E3A864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDEDA9A-4670-4E91-AAB8-03C098C1D1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDEDA9A-4670-4E91-AAB8-03C098C1D1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDEDA9A-4670-4E91-AAB8-03C098C1D1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDEDA9A-4670-4E91-AAB8-03C098C1D1EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{532C23A2-42CB-4CED-8299-49F6E44E4D1E} = {338936B7-670C-406D-A8E8-AA2866C4417E}
 		{8B08FDBF-714F-445E-8C76-24B60817100E} = {338936B7-670C-406D-A8E8-AA2866C4417E}
 		{3C6C8AA6-0027-4954-A52B-E46C47E3A864} = {338936B7-670C-406D-A8E8-AA2866C4417E}
+		{ECDEDA9A-4670-4E91-AAB8-03C098C1D1EB} = {338936B7-670C-406D-A8E8-AA2866C4417E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E834007-A239-47AE-BABE-8BAE25A9F0DB}

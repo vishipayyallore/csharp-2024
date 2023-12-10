@@ -1,5 +1,5 @@
 ﻿using Ch01.Extensions;
-using Ch01.Interfaces;
+using CoreServices.Runner.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
