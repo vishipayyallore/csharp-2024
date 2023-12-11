@@ -16,8 +16,12 @@
     <AssemblyVersion>1.1.7</AssemblyVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/vishipayyallore/learn-csharp-in-2024/tree/main/Libraries</RepositoryUrl>
-    <PackageReadmeFile></PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
