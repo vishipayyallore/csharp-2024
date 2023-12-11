@@ -13,7 +13,7 @@ public class RunnableManager(ILogger<RunnableManager> logger, IHeader header, IF
     public IEnumerable<IRunnable?> GetRunnableInstances(string namespacePrefix)
     {
         Type runnableInterfaceType = typeof(IRunnable);
-        Assembly? assembly = Assembly.GetAssembly(runnableInterfaceType);
+        Assembly? assembly = Assembly.GetEntryAssembly();
 
         _logger.LogWarning($"{runnableInterfaceType} == {assembly?.FullName}");
 
