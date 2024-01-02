@@ -11,9 +11,9 @@ I am learning C# from different Video Courses, Books, and Websites
 ```bash
 dotnet clean
 dotnet build -c Release # It should be Release, so that we will be able to publish the package
-dotnet pack -o C:\LordKrishna\Packages\
+dotnet pack -o D:\Packages\
 
-dotnet nuget add source C:\LordKrishna\Packages -n Local-AllPackages
+dotnet nuget add source D:\Packages\ -n Local-AllPackages
 dotnet nuget list source
 ```
 
