@@ -9,7 +9,6 @@ WriteLine("//  throw new Exception();");
 
 ResetColor();
 
-// Uncomment this line to throw an exception and show Auto Generate Method name
-// Program.<Main>$(String[] args)
+// Uncomment this line to throw an exception and show Auto Generate Method name Program.<Main>$(String[] args)
 //  throw new Exception();
 
