@@ -14,6 +14,10 @@ HttpClient client = new();
 
 WriteLine($"Data Set: {ds.DataSetName}. Http Client: {client.BaseAddress}");
 
+OutputEncoding = System.Text.Encoding.UTF8;
+string grinningEmoji = char.ConvertFromUtf32(0x1F600);
+WriteLine(grinningEmoji);
+
 ShowTypesAndMethod();
 
 ResetColor();
