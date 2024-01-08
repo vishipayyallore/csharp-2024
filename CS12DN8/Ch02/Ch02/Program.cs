@@ -15,5 +15,8 @@ IRunnableManager? runnableManager = host.Services.GetRequiredService<IRunnableMa
 
 runnableManager.RunAllRunnables("Ch02.Runnables");
 
+string horizontalRule = new('-', 80);
+WriteLine(horizontalRule);
+
 WriteLine("\n\nPress any key ... ");
 ReadKey();
