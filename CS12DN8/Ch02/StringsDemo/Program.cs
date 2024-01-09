@@ -21,7 +21,7 @@ WriteLine($"\n(Verbatim strings) File Path: {filePath}");
 
 // Raw strings literals
 string xml = """
-            <person age="50">
+            <person age="50" gender="Male">
             <first_name>Mark</first_name>
             </person>
             """;
