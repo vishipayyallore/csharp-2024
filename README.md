@@ -2,7 +2,10 @@
 
 I am learning C# from different Video Courses, Books, and Websites
 
-<C:\Users\Swamy\OneDrive\Desktop\ShriLordKrishna\LordKrishna\SSP>
+## Learning Resources
+
+> 1. [C# 12 and .NET 8 – Modern Cross-Platform Development Fundamentals - Eighth Edition](https://subscription.packtpub.com/book/web-development/9781837635870)
+> 1. [https://csharpindepth.com](https://csharpindepth.com)
 
 ## Publish the Package to Local Folder
 
@@ -40,3 +43,4 @@ dotnet run --project .\HelloEnvironment\HelloEnvironment.csproj
 > 1. If you want to open the same project in both Visual Studio 2022 and Visual Studio Code, delete the temporary bin and obj folders before opening the project in the other code editor.
 > 1. `dotnet help build` will open the documentation for the build command.
 > 1. `dotnet build --help` OR `dotnet build -h` OR `dotnet build -?` will open the documentation for the dotnet command.
+> 1. <C:\Users\Swamy\OneDrive\Desktop\ShriLordKrishna\LordKrishna\SSP>
