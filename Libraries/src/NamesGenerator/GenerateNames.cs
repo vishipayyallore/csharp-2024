@@ -5,9 +5,9 @@ namespace NamesGenerator;
 
 public class GenerateNames : IGenerateNames
 {
-    private static readonly string[] _consonants = { "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "l", "n", "p", "q", "r", "s", "sh", "zh", "t", "v", "w", "x" };
+    private static readonly string[] _consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "l", "n", "p", "q", "r", "s", "sh", "zh", "t", "v", "w", "x"];
 
-    private static readonly string[] _vowels = { "a", "e", "i", "o", "u", "ae", "y" };
+    private static readonly string[] _vowels = ["a", "e", "i", "o", "u", "ae", "y"];
 
     private static readonly Random _random = new();
 
@@ -39,7 +39,7 @@ public class GenerateNames : IGenerateNames
             index += 2;
         }
 
-        var nameToReturn = name.ToString();
+        string? nameToReturn = name.ToString();
 
         // Range Operator nameToReturn[..10] instead of SubString()
         return (nameToReturn.Length >= 10) ? nameToReturn[..10] : nameToReturn;
