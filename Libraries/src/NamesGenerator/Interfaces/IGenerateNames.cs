@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace NamesGenerator.Interfaces;
+﻿namespace NamesGenerator.Interfaces;
 
 public interface IGenerateNames
 {
