@@ -13,7 +13,10 @@ internal class HelloCSApp : IRunnable
         WriteLine("Hello, C# 12, and DotNet 8 !");
 
         string name = typeof(Program).Namespace ?? "None!";
-        WriteLine($"Namespace: {name}");
+        WriteLine($"Program.cs Namespace: {name}");
+
+        name = typeof(HelloCSApp).Namespace ?? "None!";
+        WriteLine($"HelloCSApp Namespace: {name}");
     }
 
 }
