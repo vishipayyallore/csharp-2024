@@ -19,6 +19,10 @@ dotnet --list-sdks
 dotnet --list-runtimes
 
 dotnet new console --use-main-program
+
+dotnet new console --output HelloCS
+
+dotnet sln add HelloCS
 ```
 
 ## Publish the Package to Local Folder
