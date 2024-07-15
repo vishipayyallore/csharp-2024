@@ -7,6 +7,20 @@ I am learning C# from different Video Courses, Books, and Websites
 > 1. [C# 12 and .NET 8 – Modern Cross-Platform Development Fundamentals - Eighth Edition](https://subscription.packtpub.com/book/web-development/9781837635870)
 > 1. [https://csharpindepth.com](https://csharpindepth.com)
 
+## Few Commands
+
+```powershell
+code --list-extensions
+code --install-extension <extension-id>
+code --uninstall-extension <extension-id>
+
+dotnet --info
+dotnet --list-sdks
+dotnet --list-runtimes
+
+dotnet new console --use-main-program
+```
+
 ## Publish the Package to Local Folder
 
 < C:\GitHub\learn-csharp-in-2024\Libraries\src>
