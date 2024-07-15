@@ -17,11 +17,10 @@ code --uninstall-extension <extension-id>
 dotnet --info
 dotnet --list-sdks
 dotnet --list-runtimes
+dotnet --version
 
 dotnet new console --use-main-program
-
 dotnet new console --output HelloCS
-
 dotnet sln add HelloCS
 ```
 
