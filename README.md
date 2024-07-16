@@ -19,9 +19,11 @@ dotnet --list-sdks
 dotnet --list-runtimes
 dotnet --version
 
-dotnet new console --use-main-program
 dotnet new console --output HelloCS
-dotnet sln add HelloCS
+dotnet new console --use-program-main --output HelloCSV1
+
+dotnet sln add .\HelloCS\HelloCS.csproj
+dotnet sln add .\HelloCSV1\HelloCSV1.csproj
 ```
 
 ## Publish the Package to Local Folder
