@@ -4,8 +4,8 @@ WriteLine("Uncomment the lines to See A. Compiler Version, and B. Auto Generate 
 WriteLine("1. //  #error version");
 WriteLine("2. //  throw new Exception();");
 
-// Compiler version: '4.9.0-2.23613.5 (47b0a1e0)'.Language version: 12.0.
-// #error version
+// Compiler version: '4.11.0-3.24321.9 (847d5884)'. Language version: 12.0.
+#error version
 
 ResetColor();
 
