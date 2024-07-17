@@ -19,6 +19,7 @@ dotnet --list-sdks
 dotnet --list-runtimes
 dotnet --version
 
+dotnet new sln --name day1
 dotnet new console --output HelloCS
 dotnet new console --use-program-main --output HelloCSV1
 
