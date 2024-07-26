@@ -2,15 +2,20 @@
 
 ForegroundColor = ConsoleColor.Green;
 
-WriteLine("Hello .NET 8 World!"); 
+WriteLine("Hello .NET 8 World!");
 
-WriteLine("Enter your name: ");
+Write("Enter your name: ");
 var name = ReadLine();
 WriteLine($"Hello {name}!");
 
-int num1 = 10, num2 = 20; 
-MathsSvc maths = new(); 
-WriteLine($"{num1} + {num2} = {maths.AddNumbers(num1, num2)}");
+MathsSvc maths = new();
+
+int num1 = 10, num2 = 20;
+WriteLine($"\n{num1} + {num2} = {maths.AddNumbers(num1, num2)}");
+
+WriteLine($"{num1} * {num2} = {maths.MultiplyNumbers(num1, num2)}");
+
+WriteLine($"Max value is {MathsSvc.MaxValue}");
 
 ResetColor();
 

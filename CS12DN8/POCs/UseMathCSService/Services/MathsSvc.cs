@@ -2,7 +2,7 @@ namespace UseMathCSService.Services;
 
 public class MathsSvc
 {
-    public static int MaxValue = 100;
+    public const int MaxValue = 100;
 
     public int AddNumbers(int a, int b)
     {
