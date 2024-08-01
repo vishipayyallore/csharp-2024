@@ -1,4 +1,8 @@
-﻿using UseMathCSService.Services;
+﻿/*
+ * C# 9.0 and .NET 5.0 - Modern Cross-Platform Development - Fifth Edition
+ */
+
+using UseMathCSService.Services;
 
 ForegroundColor = ConsoleColor.Green;
 
