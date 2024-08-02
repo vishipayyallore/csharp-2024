@@ -9,6 +9,7 @@
 
 	<ItemGroup>
     	<ProjectReference Include="..\MathServicesVBLib\MathServicesVBLib.vbproj" />
+		<ProjectReference Include="..\MathServicesCSLib\MathServicesCSLib.csproj" />
   	</ItemGroup>
 
 	<ItemGroup>

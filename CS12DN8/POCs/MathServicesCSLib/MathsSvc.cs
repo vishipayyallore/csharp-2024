@@ -1,6 +1,4 @@
-// File: MathsSvc.cs
-
-namespace UseMathCSService.Services;
+﻿namespace MathServicesCSLib;
 
 public class MathsSvc
 {
