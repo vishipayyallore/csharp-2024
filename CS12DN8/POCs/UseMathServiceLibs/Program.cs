@@ -2,37 +2,39 @@
     Using VB.NET style namespace aliasing. We are using VB.NET Library in this C# program.
 */
 using MathServicesCSLib;
+using MathServicesVBLib.MathLibrary;
 
-ForegroundColor = ConsoleColor.Green;
+ForegroundColor = ConsoleColor.DarkCyan;
 
 Write("Enter your name: ");
 var name = ReadLine();
 WriteLine($"Hello {name}!");
 
-MathsCSSvc maths = new();
+ForegroundColor = ConsoleColor.Green;
+
 
 WriteLine("\nUsing C# Library");
-
 int num1 = 10, num2 = 20;
-WriteLine($"{num1} + {num2} = {maths.AddNumbers(num1, num2)}");
 
-WriteLine($"{num1} * {num2} = {maths.MultiplyNumbers(num1, num2)}");
+MathsCSSvc mathsCsSvc = new();
+WriteLine($"{num1} + {num2} = {mathsCsSvc.AddNumbers(num1, num2)}");
+
+WriteLine($"{num1} * {num2} = {mathsCsSvc.MultiplyNumbers(num1, num2)}");
 
 WriteLine($"Max value is {MathsCSSvc.MaxValue}");
-
-ResetColor();
 
 ForegroundColor = ConsoleColor.Yellow;
 
 WriteLine("\nUsing VB.Net Library");
-
 num1 = 10;
 num2 = 20; /* Variable declaration and initialization. */
-MathsVBSvc mathsVb = new(); /* Instantiation of Maths class. */
-WriteLine($"{num1} + {num2} = {mathsVb.AddNumbers(num1, num2)}");
+
+MathsVBSvc mathsVbSvc = new(); /* Instantiation of Maths class. */
+WriteLine($"{num1} + {num2} = {mathsVbSvc.AddNumbers(num1, num2)}");
 
 /* Accessing static members of a class. */
-WriteLine($"{num1} + {num2} = {MathsVBSvc.AddNumbersV1(num1, num2)}");
+WriteLine($"{num1} * {num2} = {mathsVbSvc.MultiplyNumbers(num1, num2)}");
+
 WriteLine($"Max value is {MathsVBSvc.MaxValue}");
 
 ResetColor();
