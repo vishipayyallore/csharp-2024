@@ -1,6 +1,6 @@
 ﻿namespace MathServicesCSLib;
 
-public class MathsSvc
+public class MathsCSSvc
 {
     public const int MaxValue = 100;
 

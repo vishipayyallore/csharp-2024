@@ -1,5 +1,5 @@
 Namespace MathLibrary
-    Public Class Maths
+    Public Class MathsVBSvc
         Public Shared MaxValue As Integer = 100
 
         Public Function AddNumbers(a As Integer, b As Integer) As Integer
