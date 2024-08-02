@@ -22,7 +22,7 @@ ShowTypesAndMethod();
 
 ResetColor();
 
-void ShowTypesAndMethod()
+static void ShowTypesAndMethod()
 {
     Assembly? currentAssembly = Assembly.GetEntryAssembly();
 
