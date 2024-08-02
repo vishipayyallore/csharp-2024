@@ -1,13 +1,13 @@
 Namespace MathLibrary
-    Public Class Maths
+    Public Class MathsVBSvc
         Public Shared MaxValue As Integer = 100
 
         Public Function AddNumbers(a As Integer, b As Integer) As Integer
             Return a + b
         End Function
 
-        Public Shared Function AddNumbersV1(a As Integer, b As Integer) As Integer
-            Return a + b
+        Public Function MultiplyNumbers(a As Integer, b As Integer) As Integer
+            Return a * b
         End Function
     End Class
 End Namespace

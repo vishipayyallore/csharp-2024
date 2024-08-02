@@ -1,8 +1,6 @@
-// File: MathsSvc.cs
+﻿namespace MathServicesCSLib;
 
-namespace UseMathCSService.Services;
-
-public class MathsSvc
+public class MathsCSSvc
 {
     public const int MaxValue = 100;
 
