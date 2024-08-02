@@ -22,6 +22,11 @@ ShowTypesAndMethod();
 
 ResetColor();
 
+/*
+ * System.Runtime assembly contain zero types? This assembly is special because it contains only 
+ * type-forwarders rather than actual types. A type-forwarder represents a type that has been 
+ * implemented outside of .NET or for some other advanced reason.
+ */
 static void ShowTypesAndMethod()
 {
     Assembly? currentAssembly = Assembly.GetEntryAssembly();
