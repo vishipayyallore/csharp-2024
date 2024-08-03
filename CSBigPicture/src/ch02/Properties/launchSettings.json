@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ch02": {
+      "commandName": "Project",
+      "commandLineArgs": "arg1 arg2 arg3 arg4"
+    }
+  }
+}
