@@ -6,8 +6,5 @@ public struct Point
     public int X;
     public int Y;
 
-    public override string ToString()
-    {
-        return $"({X}, {Y}, {Z})";
-    }
+    public override readonly string ToString() => $"Point 3D: ({X}, {Y}, {Z})";
 }

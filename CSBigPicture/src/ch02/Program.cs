@@ -1,14 +1,18 @@
 ﻿// File: Program.cs
 
+using PointLib;
+
 int[] numbers = [1, 2, 3, 4, 5];
 
 ApproachableDemo(args);
 
 SumNumbersDemo1(numbers);
 
+UsePointStructure();
+
 static void ApproachableDemo(string[] values)
 {
-    WriteLine("Showing Approachable Demo");
+    WriteLine("\nShowing Approachable Demo");
 
     if (values.Length == 0)
     {
@@ -25,7 +29,7 @@ static void ApproachableDemo(string[] values)
 
 static void SumNumbersDemo1(int[] numbers)
 {
-    WriteLine("Showing Sum Numbers Demo 1");
+    WriteLine("\nShowing Sum Numbers Demo 1");
 
     int sum = 0;
     for (int i = 0; i < numbers.Length; i++)
@@ -36,3 +40,15 @@ static void SumNumbersDemo1(int[] numbers)
     WriteLine("Sum of numbers: {0}", sum);
 }
 
+static void UsePointStructure()
+{
+    WriteLine("\nShowing Use Point 2D OR 3D Demo");
+
+    Point point = new()
+    {
+        X = 10,
+        Y = 20
+    };
+
+    WriteLine("Point: {0}", point);
+}
