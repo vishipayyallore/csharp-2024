@@ -6,19 +6,6 @@ ApproachableDemo(args);
 
 SumNumbersDemo1(numbers);
 
-static void SumNumbersDemo1(int[] numbers)
-{
-    WriteLine("Showing Sum Numbers Demo 1");
-
-    int sum = 0;
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        sum += numbers[i];
-    }
-
-    WriteLine("Sum of numbers: {0}", sum);
-}
-
 static void ApproachableDemo(string[] values)
 {
     WriteLine("Showing Approachable Demo");
@@ -35,3 +22,17 @@ static void ApproachableDemo(string[] values)
     }
 
 }
+
+static void SumNumbersDemo1(int[] numbers)
+{
+    WriteLine("Showing Sum Numbers Demo 1");
+
+    int sum = 0;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        sum += numbers[i];
+    }
+
+    WriteLine("Sum of numbers: {0}", sum);
+}
+
