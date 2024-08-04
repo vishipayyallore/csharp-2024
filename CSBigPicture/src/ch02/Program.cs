@@ -10,6 +10,10 @@ SumNumbersDemo1(numbers);
 
 UsePointStructure();
 
+ShowTypeHierarchy(numbers);
+
+SumNumbersDemo2(numbers);
+
 static void ApproachableDemo(string[] values)
 {
     WriteLine("\nShowing Approachable Demo");
@@ -54,4 +58,24 @@ static void UsePointStructure()
     };
 
     WriteLine("Point: {0}", point);
+}
+
+static void ShowTypeHierarchy(int[] numbers)
+{
+    WriteLine("\nShowing Type Hierarchy");
+    var type = numbers.GetType();
+
+    do
+    {
+        WriteLine(type.FullName);
+        type = type.BaseType;
+    }
+    while (type != null);
+}
+
+
+static void SumNumbersDemo2(int[] numbers)
+{
+    var sum = numbers.Aggregate(0, (total, num) => total + num);
+    WriteLine(sum);
 }
