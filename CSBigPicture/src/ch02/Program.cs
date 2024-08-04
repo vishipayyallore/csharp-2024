@@ -20,6 +20,7 @@ static void ApproachableDemo(string[] values)
         return;
     }
 
+    // Safety feature of C# to avoid IndexOutOfRangeException
     for (int n = 0; n < values.Length; n++)
     {
         WriteLine("arg[{0}] = {1}", n, values[n]);
@@ -44,6 +45,7 @@ static void UsePointStructure()
 {
     WriteLine("\nShowing Use Point 2D OR 3D Demo");
 
+    // Resilient feature of C# to changes in PointLib
     Point point = new()
     {
         X = 10,
