@@ -45,11 +45,12 @@ static void UsePointStructure()
 {
     WriteLine("\nShowing Use Point 2D OR 3D Demo");
 
-    // Resilient feature of C# to changes in PointLib
+    // Resilient feature of C# to changes in PointLib 2D or 3D
     Point point = new()
     {
         X = 10,
-        Y = 20
+        Y = 20,
+        Z = 30 // Comment this line to use the 2D Point
     };
 
     WriteLine("Point: {0}", point);
