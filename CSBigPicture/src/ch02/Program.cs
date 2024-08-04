@@ -12,7 +12,9 @@ ShowTypeHierarchy(numbers);
 
 SumNumbers(numbers);
 
-SumNumbersExpressLambda(numbers);
+SumNumbersExpressionLambda(numbers);
+
+SumNumbersStatementLambda(numbers);
 
 static void ApproachableDemo(string[] values)
 {
@@ -73,9 +75,24 @@ static void SumNumbers(int[] numbers)
     WriteLine("Sum of numbers: {0}", sum);
 }
 
-static void SumNumbersExpressLambda(int[] numbers)
+static void SumNumbersExpressionLambda(int[] numbers)
 {
-    // C# Expression Lambda.
+    WriteLine("\nShowing Sum Numbers Expression Lambda Demo");
+
+    // C# LINQ or Expression Lambda
     var sum = numbers.Aggregate(0, (total, num) => total + num);
+    WriteLine(sum);
+}
+
+static void SumNumbersStatementLambda(int[] numbers)
+{
+    WriteLine("\nShowing Sum Numbers Statement Lambda Demo");
+    
+    // C# LINQ or Statement Lambda
+    var sum = numbers.Aggregate(0, (total, num) =>
+    {
+        WriteLine("Total: {0}, Num: {1}", total, num);
+        return total + num;
+    });
     WriteLine(sum);
 }
