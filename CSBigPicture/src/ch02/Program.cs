@@ -52,7 +52,7 @@ static void UsePointStructure()
 static void ShowTypeHierarchy(int[] numbers)
 {
     WriteLine("\nShowing Type Hierarchy");
-    var type = numbers.GetType();
+    Type? type = numbers.GetType();
 
     do
     {
@@ -79,8 +79,8 @@ static void SumNumbersExpressionLambda(int[] numbers)
 {
     WriteLine("\nShowing Sum Numbers Expression Lambda Demo");
 
-    // C# LINQ or Expression Lambda
-    var sum = numbers.Aggregate(0, (total, num) => total + num);
+    // C# LINQ, Expression Lambda
+    int sum = numbers.Aggregate(0, (total, num) => total + num);
     WriteLine(sum);
 }
 
@@ -88,8 +88,8 @@ static void SumNumbersStatementLambda(int[] numbers)
 {
     WriteLine("\nShowing Sum Numbers Statement Lambda Demo");
 
-    // C# LINQ or Statement Lambda
-    var sum = numbers.Aggregate(0, (total, num) =>
+    // C# LINQ, Statement Lambda
+    int sum = numbers.Aggregate(0, (total, num) =>
     {
         WriteLine("Total: {0}, Num: {1}", total, num);
         return total + num;
