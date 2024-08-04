@@ -19,19 +19,19 @@ static void SumNumbersDemo1(int[] numbers)
     WriteLine("Sum of numbers: {0}", sum);
 }
 
-static void ApproachableDemo(string[] args)
+static void ApproachableDemo(string[] values)
 {
     WriteLine("Showing Approachable Demo");
 
-    if (args.Length == 0)
+    if (values.Length == 0)
     {
         WriteLine("No arguments were provided.");
         return;
     }
 
-    for (int n = 0; n < args.Length; n++)
+    for (int n = 0; n < values.Length; n++)
     {
-        WriteLine("arg[{0}] = {1}", n, args[n]);
+        WriteLine("arg[{0}] = {1}", n, values[n]);
     }
 
 }
