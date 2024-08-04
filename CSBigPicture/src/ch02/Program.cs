@@ -6,13 +6,13 @@ int[] numbers = [1, 2, 3, 4, 5];
 
 ApproachableDemo(args);
 
-SumNumbersDemo1(numbers);
-
 UsePointStructure();
 
 ShowTypeHierarchy(numbers);
 
-SumNumbersDemo2(numbers);
+SumNumbers(numbers);
+
+SumNumbersExpressLambda(numbers);
 
 static void ApproachableDemo(string[] values)
 {
@@ -30,19 +30,6 @@ static void ApproachableDemo(string[] values)
         WriteLine("arg[{0}] = {1}", n, values[n]);
     }
 
-}
-
-static void SumNumbersDemo1(int[] numbers)
-{
-    WriteLine("\nShowing Sum Numbers Demo 1");
-
-    int sum = 0;
-    for (int i = 0; i < numbers.Length; i++)
-    {
-        sum += numbers[i];
-    }
-
-    WriteLine("Sum of numbers: {0}", sum);
 }
 
 static void UsePointStructure()
@@ -73,9 +60,22 @@ static void ShowTypeHierarchy(int[] numbers)
     while (type != null);
 }
 
-
-static void SumNumbersDemo2(int[] numbers)
+static void SumNumbers(int[] numbers)
 {
+    WriteLine("\nShowing Sum Numbers Demo 1");
+
+    int sum = 0;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        sum += numbers[i];
+    }
+
+    WriteLine("Sum of numbers: {0}", sum);
+}
+
+static void SumNumbersExpressLambda(int[] numbers)
+{
+    // C# Expression Lambda.
     var sum = numbers.Aggregate(0, (total, num) => total + num);
     WriteLine(sum);
 }
