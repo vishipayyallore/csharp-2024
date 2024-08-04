@@ -87,7 +87,7 @@ static void SumNumbersExpressionLambda(int[] numbers)
 static void SumNumbersStatementLambda(int[] numbers)
 {
     WriteLine("\nShowing Sum Numbers Statement Lambda Demo");
-    
+
     // C# LINQ or Statement Lambda
     var sum = numbers.Aggregate(0, (total, num) =>
     {
