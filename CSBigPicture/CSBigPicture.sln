@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35125.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B8D4A504-781C-42E8-BD82-31A08EB11A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch02", "src\ch02\ch02.csproj", "{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ch02", "src\ch02\ch02.csproj", "{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointLib", "src\PointLib\PointLib.csproj", "{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD} = {B8D4A504-781C-42E8-BD82-31A08EB11A5E}
+		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B} = {B8D4A504-781C-42E8-BD82-31A08EB11A5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BCD8509-B361-4CE7-AC84-DE2B285235B0}

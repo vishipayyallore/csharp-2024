@@ -8,6 +8,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\PointLib\PointLib.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Using Static="true" Include="System.Console" />
 	</ItemGroup>
 
