@@ -1,5 +1,6 @@
-﻿namespace PointLib;
+﻿// File: Point3D.cs
 
+namespace PointLib;
 public struct Point
 {
     public int Z;
