@@ -1,6 +1,6 @@
 ﻿// File: Point.cs
 
-namespace ch03;
+namespace ch03.Models;
 
 public class PointV2
 {
