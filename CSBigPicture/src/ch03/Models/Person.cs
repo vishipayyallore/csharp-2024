@@ -6,6 +6,8 @@ namespace ch03.Models;
 
 public class Person
 {
+    public string Name { get; set; } = "No Name";
+
     public required int BirthYear { get; init; }
 
     public Generation Generation =>

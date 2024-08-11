@@ -15,7 +15,7 @@ static void ShowPerson()
 {
     Person p = new() { BirthYear = 1970 };
 
-    WriteLine($"Person Generation: {p.Generation}");
+    WriteLine($"Person {p.Name} is Generation -> {p.Generation}");
 }
 
 static void ShowCollections()
