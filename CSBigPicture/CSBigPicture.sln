@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ch02", "src\ch02\ch02.cspro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointLib", "src\PointLib\PointLib.csproj", "{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ch03", "src\ch03\ch03.csproj", "{A03EDDCB-790E-40C4-A249-CE83FF01EA3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A03EDDCB-790E-40C4-A249-CE83FF01EA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03EDDCB-790E-40C4-A249-CE83FF01EA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03EDDCB-790E-40C4-A249-CE83FF01EA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03EDDCB-790E-40C4-A249-CE83FF01EA3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C1319946-B9C7-4CA3-B2D5-CDFABC162BDD} = {B8D4A504-781C-42E8-BD82-31A08EB11A5E}
 		{104F9F59-F848-4EAC-91F1-4A642EC9EE3B} = {B8D4A504-781C-42E8-BD82-31A08EB11A5E}
+		{A03EDDCB-790E-40C4-A249-CE83FF01EA3C} = {B8D4A504-781C-42E8-BD82-31A08EB11A5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BCD8509-B361-4CE7-AC84-DE2B285235B0}

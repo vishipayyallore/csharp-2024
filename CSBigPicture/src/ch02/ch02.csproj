@@ -8,7 +8,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\PointLib\PointLib.csproj" />
+		<ProjectReference Include="..\PointLib\PointLib.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
