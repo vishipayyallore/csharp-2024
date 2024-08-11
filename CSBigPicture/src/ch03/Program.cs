@@ -9,6 +9,15 @@ WriteLine($"Point V1: {ptV1} \nPoint V2: {ptV2}\n");
 
 ShowCollections();
 
+ShowPerson();
+
+static void ShowPerson()
+{
+    Person p = new() { BirthYear = 1970 };
+
+    WriteLine($"Person Generation: {p.Generation}");
+}
+
 static void ShowCollections()
 {
     string[] stooges3 = ["Moe", "Larry", "Curly"];
