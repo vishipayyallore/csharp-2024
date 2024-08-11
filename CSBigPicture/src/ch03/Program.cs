@@ -7,13 +7,18 @@ PointV2 ptV2 = new() { X = 30, Y = 12 }; // What happens if X (or X & Y) are omi
 
 WriteLine($"Point V1: {ptV1} \nPoint V2: {ptV2}\n");
 
-string[] stooges3 = ["Moe", "Larry", "Curly"];
-DisplayStrings("C# 12 collection initializer syntax", stooges3);
+ShowCollections();
 
-string[] twoStooges = ["Moe", "Larry"];
-string[] moreStooges = ["Curly", "Shemp"];
-string[] fourStooges = [.. twoStooges, .. moreStooges];  // Spread operator
-DisplayStrings("C# 12 collection spread operator", fourStooges);
+static void ShowCollections()
+{
+    string[] stooges3 = ["Moe", "Larry", "Curly"];
+    DisplayStrings("C# 12 collection initializer syntax", stooges3);
+
+    string[] twoStooges = ["Moe", "Larry"];
+    string[] moreStooges = ["Curly", "Shemp"];
+    string[] fourStooges = [.. twoStooges, .. moreStooges];  // Spread operator
+    DisplayStrings("C# 12 collection spread operator", fourStooges);
+}
 
 static void DisplayStrings(string context, string[] strings)
 {
