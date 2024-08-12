@@ -1,4 +1,6 @@
-﻿namespace PointLib;
+﻿// File: Point2D.cs
+
+namespace PointLib;
 
 public struct Point
 {
