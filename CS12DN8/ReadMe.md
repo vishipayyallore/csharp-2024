@@ -1,5 +1,7 @@
 # C# 12, and .NET 8
 
-## ?? is the null-coalescing operator
+## To Learn
 
-> 1. To be done
+> 1. ?? is the null-coalescing operator
+> 1. Implicitly and globally importing namespaces
+> 1. 
