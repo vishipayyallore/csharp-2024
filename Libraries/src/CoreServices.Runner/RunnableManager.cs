@@ -15,13 +15,13 @@ public class RunnableManager(ILogger<RunnableManager> logger, IHeader header, IF
         Type runnableInterfaceType = typeof(IRunnable);
         Assembly? assembly = Assembly.GetEntryAssembly();
 
-        _logger.LogWarning($"{runnableInterfaceType} == {assembly?.FullName}");
+        _logger.LogWarning($"{0} == {1}", runnableInterfaceType, assembly?.FullName);
 
         if (runnableInterfaceType == null || assembly == null)
         {
             _logger.LogError("Unable to retrieve types due to null reflection objects.");
 
-            return Enumerable.Empty<IRunnable?>();
+            return [];
         }
 
         List<IRunnable?> runnableInstances = assembly.GetTypes()
@@ -31,7 +31,7 @@ public class RunnableManager(ILogger<RunnableManager> logger, IHeader header, IF
 
         if (!runnableInstances.Any())
         {
-            _logger.LogWarning($"No runnables found in namespace '{namespacePrefix}'.");
+            _logger.LogWarning($"No runnables found in namespace '{0}'.", namespacePrefix);
         }
 
         return runnableInstances;
@@ -49,7 +49,7 @@ public class RunnableManager(ILogger<RunnableManager> logger, IHeader header, IF
         }
         catch (Exception ex)
         {
-            _logger.LogError($"An error occurred while running {runnable.GetType().Name}: {ex.Message}");
+            _logger.LogError($"An error occurred while running {0}: {1}", runnable.GetType().Name, ex.Message);
         }
     }
 
