@@ -15,4 +15,5 @@ WriteLine("Namespace: {0}", typeof(Program).Namespace ?? "None!");
 ResetColor();
 
 throw new Exception();
+// Revealing the hidden code - Program.<Main>$(String[] args). Execute the program without debugging. 
 

@@ -4,7 +4,7 @@ WriteLine("Uncomment the lines to See \n\tA. Compiler Version. \n\tB. Auto Gener
 WriteLine("\n1. //  #error version");
 WriteLine("2. //  throw new Exception();");
 
-// Compiler version: '4.11.0-3.24321.9 (847d5884)'. Language version: 12.0.
+// Compiler version: '4.12.0-2.24459.2 (be9c072e)'.Language version: 12.0.
 // #error version
 
 ResetColor();
