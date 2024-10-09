@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch02", "Ch02\Ch02\Ch02.cspr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTypesDemo", "Ch02\DataTypesDemo\DataTypesDemo.csproj", "{D34C1FF1-899E-443C-B6FD-637E7E38E935}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumbersDemo", "Ch02\NumbersDemo\NumbersDemo.csproj", "{79C1D1FF-DE38-4159-9402-E773506E2B2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A3NumbersDemo", "Ch02\NumbersDemo\A3NumbersDemo.csproj", "{79C1D1FF-DE38-4159-9402-E773506E2B2C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringsDemo", "Ch02\StringsDemo\StringsDemo.csproj", "{AF756906-0BB4-4335-A118-C60E95DCA838}"
 EndProject
