@@ -9,7 +9,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="CoreServices.Runner" Version="1.1.11" />
-		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.*" />
 	</ItemGroup>
 
 	<ItemGroup>
