@@ -1,5 +1,9 @@
 ﻿ShowNumberVariables();
 
+ExploringWholeNumbers();
+
+ShowSizeOfTypes();
+
 static void ShowNumberVariables()
 {
     // An unsigned integer is a positive whole number or 0.
@@ -25,3 +29,38 @@ static void ShowNumberVariables()
     WriteLine($"Another Real Number: {anotherRealNumber}");
 }
 
+static void ExploringWholeNumbers()
+{
+    int decimalNotation = 2_000_000;
+    int binaryNotation = 0b_0001_1110_1000_0100_1000_0000;
+    int hexadecimalNotation = 0x_001E_8480;
+
+    // Check the three variables have the same value.
+    Console.WriteLine($"{decimalNotation == binaryNotation}");
+    Console.WriteLine($"{decimalNotation == hexadecimalNotation}");
+
+    // Output the variable values in decimal.
+    Console.WriteLine($"{decimalNotation:N0}");
+    Console.WriteLine($"{binaryNotation:N0}");
+    Console.WriteLine($"{hexadecimalNotation:N0}");
+
+    // Output the variable values in hexadecimal.
+    Console.WriteLine($"{decimalNotation:X}");
+    Console.WriteLine($"{binaryNotation:X}");
+    Console.WriteLine($"{hexadecimalNotation:X}");
+}
+
+static void ShowSizeOfTypes()
+{
+    // .NET Core 3.1 and later:
+    WriteLine("\nSizes of data types:");
+    WriteLine($"byte is {sizeof(byte)} bytes.");
+    WriteLine($"short is {sizeof(short)} bytes.");
+    WriteLine($"int is {sizeof(int)} bytes.");
+    WriteLine($"long is {sizeof(long)} bytes.");
+    WriteLine($"float is {sizeof(float)} bytes.");
+    WriteLine($"double is {sizeof(double)} bytes.");
+    WriteLine($"decimal is {sizeof(decimal)} bytes.");
+    WriteLine($"char is {sizeof(char)} bytes.");
+    WriteLine($"bool is {sizeof(bool)} bytes.");
+}
