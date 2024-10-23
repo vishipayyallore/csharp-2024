@@ -1,10 +1,29 @@
-﻿ShowNumberVariables();
+﻿
+ForegroundColor = ConsoleColor.DarkBlue;
+
+ShowNumberVariables();
+
+ForegroundColor = ConsoleColor.DarkGreen;
 
 ExploringWholeNumbers();
 
+ForegroundColor = ConsoleColor.DarkRed;
+
 ShowSizeOfTypes();
 
+ForegroundColor = ConsoleColor.DarkYellow;
+
 ComparingDoubleAndDecimalTypes();
+
+ForegroundColor = ConsoleColor.DarkMagenta;
+
+NewNumberTypesAndUnsafeCode();
+
+ForegroundColor = ConsoleColor.DarkCyan;
+
+SpecialFloatAndDoubleValues();
+
+ResetColor();
 
 static void ShowNumberVariables()
 {
@@ -97,4 +116,43 @@ static void ComparingDoubleAndDecimalTypes()
     {
         WriteLine($"{c} + {d} does NOT equal 0.3");
     }
+}
+
+static void NewNumberTypesAndUnsafeCode()
+{
+    WriteLine("\nNew number types and unsafe code:");
+    unsafe
+    {
+        WriteLine($"Half uses {sizeof(Half)} bytes and can store numbers in the range {Half.MinValue:N0} to {Half.MaxValue:N0}.");
+        WriteLine($"Int128 uses {sizeof(Int128)} bytes and can store numbers in the range {Int128.MinValue:N0} to {Int128.MaxValue:N0}.");
+    }
+}
+
+static void SpecialFloatAndDoubleValues()
+{
+    WriteLine("\nSpecial float and double values:");
+
+    WriteLine($"double.Epsilon: {double.Epsilon}");
+    WriteLine($"double.Epsilon to 324 decimal places: {double.Epsilon:N324}");
+    WriteLine($"double.Epsilon to 330 decimal places: {double.Epsilon:N330}");
+
+    const int col1 = 37;
+    const int col2 = 6;
+    string line = new('-', col1 + col2 + 3);
+
+    WriteLine(line);
+    WriteLine($"{"Expression",-col1} | {"Value",col2}");
+    WriteLine(line);
+    WriteLine($"{"double.NaN",-col1} | {double.NaN,col2}");
+    WriteLine($"{"double.PositiveInfinity",-col1} | {double.PositiveInfinity,col2}");
+    WriteLine($"{"double.NegativeInfinity",-col1} | {double.NegativeInfinity,col2}");
+    WriteLine(line);
+    WriteLine($"{"0.0 / 0.0",-col1} | {0.0 / 0.0,col2}");
+    WriteLine($"{"3.0 / 0.0",-col1} | {3.0 / 0.0,col2}");
+    WriteLine($"{"-3.0 / 0.0",-col1} | {-3.0 / 0.0,col2}");
+    WriteLine($"{"3.0 / 0.0 == double.PositiveInfinity",-col1} | {3.0 / 0.0 == double.PositiveInfinity,col2}");
+    WriteLine($"{"-3.0 / 0.0 == double.NegativeInfinity",-col1} | {-3.0 / 0.0 == double.NegativeInfinity,col2}");
+    WriteLine($"{"0.0 / 3.0",-col1} | {0.0 / 3.0,col2}");
+    WriteLine($"{"0.0 / -3.0",-col1} | {0.0 / -3.0,col2}");
+    WriteLine(line);
 }
