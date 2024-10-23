@@ -4,6 +4,8 @@ ExploringWholeNumbers();
 
 ShowSizeOfTypes();
 
+ComparingDoubleAndDecimalTypes();
+
 static void ShowNumberVariables()
 {
     // An unsigned integer is a positive whole number or 0.
@@ -55,13 +57,44 @@ static void ShowSizeOfTypes()
 {
     // .NET Core 3.1 and later:
     WriteLine("\nSizes of data types:");
-    WriteLine($"byte is {sizeof(byte)} bytes.");
-    WriteLine($"short is {sizeof(short)} bytes.");
-    WriteLine($"int is {sizeof(int)} bytes.");
-    WriteLine($"long is {sizeof(long)} bytes.");
-    WriteLine($"float is {sizeof(float)} bytes.");
-    WriteLine($"double is {sizeof(double)} bytes.");
-    WriteLine($"decimal is {sizeof(decimal)} bytes.");
+
+    WriteLine($"byte uses {sizeof(byte)} bytes and can store numbers in the range {byte.MinValue:N0} to {byte.MaxValue:N0}.");
+    WriteLine($"short uses {sizeof(short)} bytes and can store numbers in the range {short.MinValue:N0} to {short.MaxValue:N0}.");
+    WriteLine($"int uses {sizeof(int)} bytes and can store numbers in the range {int.MinValue:N0} to {int.MaxValue:N0}.");
+    WriteLine($"long uses {sizeof(long)} bytes and can store numbers in the range {long.MinValue:N0} to {long.MaxValue:N0}.");
+    WriteLine($"float uses {sizeof(float)} bytes and can store numbers in the range {float.MinValue:N0} to {float.MaxValue:N0}.");
+    WriteLine($"double uses {sizeof(double)} bytes and can store numbers in the range {double.MinValue:N0} to {double.MaxValue:N0}.");
+    WriteLine($"decimal uses {sizeof(decimal)} bytes and can store numbers in the range {decimal.MinValue:N0} to {decimal.MaxValue:N0}.");
     WriteLine($"char is {sizeof(char)} bytes.");
     WriteLine($"bool is {sizeof(bool)} bytes.");
+}
+
+static void ComparingDoubleAndDecimalTypes()
+{
+    WriteLine("\nComparing double and decimal types:");
+
+    WriteLine("Using doubles:");
+    double a = 0.1;
+    double b = 0.2;
+
+    if (a + b == 0.3)
+    {
+        WriteLine($"{a} + {b} equals 0.3");
+    }
+    else
+    {
+        WriteLine($"{a} + {b} does NOT equal 0.3");
+    }
+
+    WriteLine("Using decimals:");
+    decimal c = 0.1M;
+    decimal d = 0.2M;
+    if (c + d == 0.3M)
+    {
+        WriteLine($"{c} + {d} equals 0.3");
+    }
+    else
+    {
+        WriteLine($"{c} + {d} does NOT equal 0.3");
+    }
 }
