@@ -1,5 +1,9 @@
 # C# 12, and .NET 8
 
+## Current Location
+
+> 1. 
+
 ## To Learn
 
 > 1. ?? is the null-coalescing operator
